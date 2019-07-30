@@ -1,23 +1,21 @@
-# VideoClip
+# [VideoClip](https://github.com/afkT/Java/tree/master/VideoClip)
 
 Java 实现 MP4 裁剪功能
 
 ### 概述
 
->主要用的是 mp4Parser (根据关键帧进行裁剪) - 自己进行封装以及内部代码处理等, 便于使用
->
-> <a href="http://blog.csdn.net/sdvch/article/details/38348475">MP4的分割和拼接介绍</a>
->
-> <a href="https://github.com/sannies/mp4parser">mp4Parser - github</a>
+> 主要用的是 mp4Parser (根据关键帧进行裁剪) - 自己进行封装以及内部代码处理等, 便于使用
+
+- [MP4 分割和拼接介绍](http://blog.csdn.net/sdvch/article/details/38348475)
+
+- [mp4Parser - github](https://github.com/sannies/mp4parser)
 
 
-### 实现代码：
+### 具体实现类
 
-> 具体实现类
-> 
-> * TrimVideoUtils 裁减视频工具类
+- [TrimVideoUtils 裁减视频工具类](https://github.com/afkT/Java/blob/master/VideoClip/src/com/clip/TrimVideoUtils.java)
 
-### 使用方法：
+### 使用方法
 
 ```java
 package com.clip;
@@ -105,6 +103,6 @@ public class ClipMain {
 
 ### 注意事项
 
-> <b>首先该裁减视频是以关键帧进行裁减，例如视频时长 15秒 然后选择裁减 10-14秒这个时间段，如果该视频关键帧 0.x秒一帧, 则裁减出来接近就是10-14秒这个区间段</b>
-> 
-> <b>但是有部分视频关键帧间隔比较大，就会导致虽然选择裁减10-14区间段，但是可能并不是从10秒开始，而是自动找距离10秒最近的关键帧秒数进行裁剪</b>
+首先该裁减视频是以关键帧进行裁减，例如视频时长 15 秒，然后选择裁减 10-14 秒这个时间段，如果该视频关键帧 0.x 秒一帧，则裁减出来接近就是 10-14 秒这个区间段
+
+但是有部分视频关键帧间隔比较大，就会导致虽然选择裁减 10-14 区间段，但是可能并不是从 10 秒开始，而是自动找距离 10 秒最近的关键帧秒数进行裁剪
