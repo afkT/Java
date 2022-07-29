@@ -28,7 +28,7 @@
 
 ## License
 
-    Copyright 2018 afkT
+    Copyright 2022 afkT
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
