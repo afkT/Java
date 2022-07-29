@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-🐬 这是一个 Java 相关联功能实现代码合集，主要存储 Java 实现的功能代码
+🐬 这是一个 Java 相关联功能实现代码合集，主要存储 Java 实现的功能代码。
 </p>
 
 <p align="center">
